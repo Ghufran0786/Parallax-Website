@@ -7,5 +7,9 @@ Interactive Elements: Experience interactive elements throughout the website, en
 Sleek Design: Enjoy a visually appealing and user-friendly design that showcases the power and grandeur of Godzilla while maintaining ease of navigation.
 
 # Technologies Used
-HTML5
+HTML5, 
 CSS3
+
+# Acknowledgements
+The Godzilla Monsterverse Parallax Website was inspired by the iconic Godzilla franchise created by Toho Company, Ltd.
+Special thanks to all the developers and designers whose work on parallax websites served as inspiration for this project.
