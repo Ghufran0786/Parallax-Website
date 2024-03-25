@@ -1,0 +1,127 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+ 
+.pimg1{
+    background-image: url(king\ of\ monsters.jpg);
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url(godzilla\ vs\ kong.jpg);
+    min-height: 850px;
+}
+.pimg3{
+    background-image: url(godzilla\ x\ kong.jpg);
+    min-height: 900px;
+}
+
+.pimg4 {
+    background-image: url('162634.jpg');
+    min-height: 900px;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg{
+    background: #313534;
+    color: white;
+    padding: 20px;
+}
+
+.section{
+    padding: 50px 80px;
+    text-align: center;
+    text-align: justify;
+}
+
+.section-light{
+    background: #f4f4f4;
+    color: #666;
+    letter-spacing: 1.2px;
+}
+
+.section-dark{
+    background: #282e34;
+    color: #ddd;
+}
+
+.pimg4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1; /* Ensure the gradient overlay appears above the image */
+}
+
+.pimg1 .textBg {
+    background: #313534; /* Set the background of .textBg to transparent */
+    color: white; /* Ensure the text is still visible */
+    position: relative; /* Add this to ensure proper stacking context */
+    z-index: 2; /* Ensure .textBg appears above the gradient overlay */
+}
+
+.pimg2 .textBg {
+    background: #313534; /* Set the background of .textBg to transparent */
+    color: white; /* Ensure the text is still visible */
+    position: relative; /* Add this to ensure proper stacking context */
+    z-index: 2; /* Ensure .textBg appears above the gradient overlay */
+}
+
+.pimg3 .textBg {
+    background: #313534; /* Set the background of .textBg to transparent */
+    color: white; /* Ensure the text is still visible */
+    position: relative; /* Add this to ensure proper stacking context */
+    z-index: 2; /* Ensure .textBg appears above the gradient overlay */
+}
+
+.pimg4 .textBg {
+    background: #313534; /* Set the background of .textBg to transparent */
+    color: white; /* Ensure the text is still visible */
+    position: relative; /* Add this to ensure proper stacking context */
+    z-index: 2; /* Ensure .textBg appears above the gradient overlay */
+}
+
+/* Add responsive styles */
+@media only screen and (max-width: 768px) {
+    .ptext {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .section {
+        padding: 50px 20px;
+    }
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: scroll; /* Change fixed to scroll on smaller screens */
+    }
+}
